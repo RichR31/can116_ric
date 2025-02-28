@@ -15,7 +15,7 @@ export default function Home() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`${ESP32_IP}/data`);
+      const response = await fetch('/api/proxy');
       
       const data = await response.text();
       const [angleStr, rightStr, frontStr, leftStr] = data.trim().split(',');
