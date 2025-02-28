@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 const ESP32_IP = 'http://172.20.50.58';
 const CANVAS_SIZE = 600;
 const MULTIPLIER = 2; // Pixels per cm
-const CANE_LENGTH = 50; // In pixels
 const SENSOR_ANGLE = 17; // Degrees for left and right sensor legs
 
 export default function Home() {
